@@ -446,14 +446,54 @@
 
     <div class="backdrop is-hidden" data-backdrop>
       <div class="modal">
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla quis
-          debitis quibusdam doloremque perspiciatis distinctio consequuntur
-          nobis ipsa dolore earum quisquam qui eveniet maxime ad, numquam libero
-          quos, veritatis accusantium similique tempora nemo? Quo consequuntur
-          iusto eius aut facilis doloribus aliquam quae vitae dolor
-          voluptatibus? Accusamus corrupti cumque odio illo.
-        </p>
+        <form class="form js-speaker-form">
+          <div class="form-field">
+            <label for="name">Имя</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Иван Иваныч"
+              autofocus
+            />
+          </div>
+
+          <div class="form-field">
+            <label for="tel">Телефон</label>
+            <input
+              type="tel"
+              name="tel"
+              id="tel"
+              placeholder="+30**-000-00-00"
+            />
+          </div>
+
+          <div class="form-field">
+            <label for="mail">Почта</label>
+            <input
+              type="email"
+              name="mail"
+              id="email"
+              placeholder="my@mail.com"
+            />
+          </div>
+          <div class="form-field">
+            <label for="comment">Оставьте коментарий</label>
+            <textarea
+              class="comment"
+              name="comment"
+              id="comment"
+              rows="8"
+              placeholder="Уточните детали "
+            ></textarea>
+          </div>
+          <div class="form-field">
+            <input type="checkbox" name="policy" id="policy" />
+            <label for="policy">Соглашаюсь на всё</label>
+          </div>
+
+          <button type="submit">Оставить заявку</button>
+        </form>
         <button data-close-modal>Закрыть</button>
       </div>
     </div>
