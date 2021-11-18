@@ -396,9 +396,10 @@
                     </div>
 
                     <button class="buttonsub" type="submit">
-              <svg class="icon-mail" width="16" height="12">
-                <use href="./images/sprite.svg#icon-sendf"></use></svg
-              >Оставить заявку
+              Подписаться
+              <svg class="icon-sendf" width="24" height="24">
+                <use href="./images/sprite.svg#icon-sendf"></use>
+              </svg>
             </button>
                 </form>
             </div>
@@ -410,12 +411,12 @@
         <div class="modal">
             <form class="form js-speaker-form">
                 <button class="data-close-modal" data-close-modal>
-            <svg class="icon-closef" width="11" height="11">
+            <svg class="icon-closef" width="18" height="18">
               <use href="./images/sprite.svg#icon-closef"></use>
             </svg>
           </button>
                 <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
-                <div class="form-cont">
+                <div class="form-cont-name">
                     <label for="name" class="name-field-form name-pos">Имя</label>
                     <input class="field-form name-form-pos" type="text" name="name" id="name" placeholder="" autofocus />
                     <svg class="name-pos-icon" width="18" height="18">
@@ -423,7 +424,7 @@
             </svg>
                 </div>
 
-                <div class="form-cont">
+                <div class="form-cont-phone">
                     <label for="tel" class="name-field-form phone-pos">Телефон</label>
                     <input class="field-form phone-form-pos" type="tel" name="tel" id="tel" placeholder="" />
                     <svg class="phone-pos-icon" width="18" height="18">
@@ -431,7 +432,7 @@
             </svg>
                 </div>
 
-                <div class="form-cont">
+                <div class="form-cont-mail">
                     <label for="mail" class="name-field-form mail-pos">Почта</label>
                     <input class="field-form mail-form-pos" type="email" name="mail" id="email" placeholder="" />
                     <svg class="mail-pos-icon" width="18" height="18">
@@ -451,23 +452,27 @@
           </div>
           <div class="form-cont">
             <!-- ========================================== -->
-            <input
-              type="checkbox"
-              name="policy"
-              id="policy"
-              class="chekbox-form"
-            />
-            <label for="policy" class="name-chekbox-form"
-              >Соглашаюсь с рассылкой и принимаю
-              <a href="#" class="c">Условия договора</a></label
-            >
-            <!-- ========================================== -->
-            <button type="submit" class="btn-form-submit">Отправить</button>
-          </div>
-        </form>
-      </div>
+            <label class="field">
+              <input
+                class="checkbox"
+                type="checkbox"
+                name="topic"
+                value="html"
+              />
+              <span class="iconchkb"></span>
+              <span class="label"
+                >Соглашаюсь с рассылкой и принимаю
+                <a href="#" class="chekbox-policy">Условия договора</a></span
+              >
+            </label>
+
+                    <button type="submit" class="btn-form-submit">Отправить</button>
+                </div>
+            </form>
+        </div>
     </div>
 
     <script src="./js/modal.js"></script>
-  </body>
+</body>
+
 </html>

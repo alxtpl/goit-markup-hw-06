@@ -77,5 +77,8 @@
      <symbol id="icon-closef" viewBox="0 0 32 32">
       <path  d="m26.667 9.081-1.97-1.97-7.808 7.808-7.808-7.808-1.97 1.97 7.808 7.808-7.808 7.808 1.97 1.97 7.808-7.808 7.808 7.808 1.97-1.97-7.808-7.808 7.808-7.808z"/>
     </symbol>
+    <symbol id="icon-full-check" viewBox="0 0 32 32">
+      <path fill="#fff" style="fill:var(--color1, #fff);stroke:var(--color1, #fff)" stroke="#fff" stroke-width=".427" d="m6.308 16.537-.147-.14-2.205 2.088 7.767 7.41 16.318-15.567-2.19-2.089-14.128 13.465-5.416-5.167z"/>
+    </symbol>
   </defs>
 </svg>
